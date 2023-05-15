@@ -1,4 +1,4 @@
-# Deploy a Sovereign DEX Rollup on top of Blocksapce Race Network
+# Deploy a Sovereign DEX Rollup on top of Blockspace Race Network
 
 We have chosen to deploy an Ethermint rollup with a Uniswap V3 function on top of the Blockspace Race Network.
 
