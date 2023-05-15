@@ -2,7 +2,7 @@
 
 We choose to depoly an Ethermint rollup with a Uniswap V3 function on top of the Blockrace Network. 
 
-# Installation 
+# Installation & Setting Up
 
 You can install Ethermint, Golang, Foundry, and learn how to run light client from this link: https://rollkit.dev/docs/tutorials/ethermint/. 
 
@@ -21,5 +21,14 @@ Then add rpc to config.toml to [Core] section
     RPCPort = "30159"
     GRPCPort = "30190"
 ```
-www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F29874c7b-77fa-47cb-84b2-ab13c1bbdfb8%2FUntitled.png?id=9b1607b9-cbfa-4333-92ce-b6bbff283a5e&table=block&spaceId=8dedd799-f5dc-4814-ac8c-115b4dd53c6b&width=2000&userId=d8a846cf-f1b5-4b9e-a994-f90cac7b2422&cache=v2
 
+This would give you a stable connectioned light client: 
+![image](https://github.com/maaaagi/celestiablockrace/blob/master/lightclient.png)
+
+
+## Ethermint Rollup
+The recommended way to lauch a Ethermint Rollup is as follows: 
+```
+ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT
+```
+Notes that you can 
