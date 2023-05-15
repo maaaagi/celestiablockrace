@@ -45,6 +45,7 @@ You can run this script ( ensure Blockrace Network is connecting in another term
 $ forge script scripts/DeployDevelopment.s.sol --broadcast --fork-url <YOU_RURL> --private-key <YOUR_PRIVATE_KEY>
 ```
 
+Here we successfully deployed our contracts into Blockspace Race Network. 
 ![image](https://github.com/maaaagi/celestiablockrace/blob/master/depolying.png)
 
 ### Interact with the smart contract
